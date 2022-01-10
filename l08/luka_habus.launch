@@ -1,0 +1,12 @@
+<launch>
+	
+	<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" />
+	
+	<node pkg="turtle_lawnmower" type="turtle_lawnmower_node" name="turtle_lawnmower_node" />
+	
+	<node pkg="rosservice" type="rosservice" name="teleport" args="call /turtle1/teleport_absolute 1 1 0 "/>
+	
+	<arg name="node_start_delay" default="0.01" />
+	<node pkg="rosservice" type="rosservice" name="clear" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " args="call /clear" />
+		
+</launch>

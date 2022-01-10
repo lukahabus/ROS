@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luka/Documents/PISR/labosi/l07/task 1/luka_habus.cpp
+iostream
+-
+boost/numeric/ublas/lu.hpp
+-
+boost/numeric/ublas/vector.hpp
+-
+boost/numeric/ublas/matrix.hpp
+-
+boost/numeric/ublas/io.hpp
+-
+

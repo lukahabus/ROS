@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/luka_habus.dir/luka_habus.cpp.o  -o luka_habus 
