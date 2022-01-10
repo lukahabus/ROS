@@ -1,0 +1,17 @@
+<launch>
+	
+	<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" />
+	
+	<node pkg="mouse_tracker" type="mouse_position_publisher.py" name="mouse_position_publisher" />
+	
+	<node pkg="mouse_tracker" type="turtle_control.py" name="turtle_control">
+
+		<remap from="/cmd_vel" to="/turtle1/cmd_vel"/>
+		<remap from="/pose" to="/turtle1/pose"/>
+		
+	</node>
+	
+	<param name="x_size" type="int" value="1920"/>
+	<param name="y_size" type="int" value="1080"/>
+		
+</launch>
